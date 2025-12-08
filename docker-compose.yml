@@ -3,7 +3,7 @@ version: "3.9"
 services:
   mysql:
     image: mysql:8.0
-    container_name: flight-mysql
+    container_name: flight-mysql-1
     environment:
       MYSQL_ROOT_PASSWORD: "Riju@03Rai@07"
       MYSQL_DATABASE: "flight_db"
