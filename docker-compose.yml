@@ -20,7 +20,7 @@ services:
 
   eureka-server:
     build: ./eureka-server
-    container_name: eureka-server
+    container_name: eureka-server-1
     ports:
       - "8761:8761"
     environment:
@@ -32,7 +32,7 @@ services:
 
   config-server:
     build: ./config-server
-    container_name: config-server
+    container_name: config-server-1
     ports:
       - "8888:8888"
     environment:
@@ -44,7 +44,7 @@ services:
 
   flight-service:
     build: ./flight-service
-    container_name: flight-service
+    container_name: flight-service-1
     ports:
       - "9001:9001"
     environment:
@@ -65,7 +65,7 @@ services:
     
   booking-service:
     build: ./booking-service
-    container_name: booking-service
+    container_name: booking-service-1
     ports:
       - "9002:9002"
     environment:
@@ -87,7 +87,7 @@ services:
 
   api-gateway:
     build: ./security-api-gateway       # adjust if your folder name is different
-    container_name: api-gateway
+    container_name: api-gateway-1
     ports:
       - "8062:8062"
     environment:
