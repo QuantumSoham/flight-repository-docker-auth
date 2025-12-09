@@ -21,10 +21,6 @@ public class JwtUtil {
             @Value("${jwt.secret}") String secret,
             @Value("${jwt.expiration-ms}") long expirationMs) {
 
-        // 🔴 OLD (causing error)
-        // byte[] keyBytes = Decoders.BASE64.decode(secret);
-
-        // ✅ NEW: use secret directly as bytes (no Base64)
         byte[] keyBytes = secret.getBytes(StandardCharsets.UTF_8);
 
         this.key = Keys.hmacShaKeyFor(keyBytes);
