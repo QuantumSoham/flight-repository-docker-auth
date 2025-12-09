@@ -1,4 +1,7 @@
 # Flight Booking Microservices System with Docker and Java Authentication and JWT
+![System Design Architecture](https://raw.githubusercontent.com/QuantumSoham/flight-repository-docker-auth/e912aee8d3fa4cecf1140bdbc71cceb7c9078f05/System%20Design%20Architecture.png)
+
+---
 
 <a href="https://app.eraser.io/workspace/FiFd576WPN1GTdtpOvz9?elements=NVKUhVZ9q9HuzfMg7-FsSg">View on Eraser<br /><img src="https://app.eraser.io/workspace/FiFd576WPN1GTdtpOvz9/preview?elements=NVKUhVZ9q9HuzfMg7-FsSg&type=embed" /></a>
 
