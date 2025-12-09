@@ -3,7 +3,7 @@ package com.flightapp.apigateway.dto;
 import com.flightapp.apigateway.model.UserRole;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-
+//authentication response after registration
 @Data
 @AllArgsConstructor
 public class AuthResponse {
