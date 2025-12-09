@@ -10,7 +10,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
+//a simple controller to handle user authentication and role based login
 @RestController
 @RequestMapping("/auth")
 @RequiredArgsConstructor
@@ -32,7 +32,7 @@ public class AuthController {
         return ResponseEntity.ok(response);
     }
 
-    // simple test
+    // simple test to see if api server responds
     @GetMapping("/ping")
     public String ping() {
         return "Auth OK";
