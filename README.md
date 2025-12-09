@@ -1,5 +1,5 @@
 # Flight Booking Microservices System with Docker and Java Authentication and JWT
-[View on Eraser![](https://app.eraser.io/workspace/FiFd576WPN1GTdtpOvz9/preview?elements=NVKUhVZ9q9HuzfMg7-FsSg&type=embed)](https://app.eraser.io/workspace/FiFd576WPN1GTdtpOvz9?elements=NVKUhVZ9q9HuzfMg7-FsSg)
+
 <a href="https://app.eraser.io/workspace/FiFd576WPN1GTdtpOvz9?elements=NVKUhVZ9q9HuzfMg7-FsSg">View on Eraser<br /><img src="https://app.eraser.io/workspace/FiFd576WPN1GTdtpOvz9/preview?elements=NVKUhVZ9q9HuzfMg7-FsSg&type=embed" /></a>
 
 
