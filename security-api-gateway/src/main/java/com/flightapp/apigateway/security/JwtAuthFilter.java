@@ -70,16 +70,16 @@ public class JwtAuthFilter implements GlobalFilter, Ordered {
             return true;
         }
 
-        if (path.equals("/api/v1.0/flight/search") && method == HttpMethod.POST) {
+        if (path.equals("/api/flight/search") && method == HttpMethod.POST) {
             return true;
         }
 
-        if (path.equals("/api/v1.0/flight/airline/all") && method == HttpMethod.GET) {
+        if (path.equals("/api/flight/airline/all") && method == HttpMethod.GET) {
             return true;
         }
 
         // GET /api/v1.0/flight/{flightId} (flight details)
-        if (path.matches("^/api/v1.0/flight/\\d+$") && method == HttpMethod.GET) {
+        if (path.matches("^/api/flight/\\d+$") && method == HttpMethod.GET) {
             return true;
         }
 
@@ -95,16 +95,16 @@ public class JwtAuthFilter implements GlobalFilter, Ordered {
         // - GET /api/v1.0/flight/airline/{id}  (airline details)
         // - POST /api/v1.0/flight/airline/inventory/add
         // - PUT /api/v1.0/flight/{flightId}/**  (seat ops)
-        if (path.equals("/api/v1.0/flight/airline/add")) {
+        if (path.equals("/api/flight/airline/add")) {
             return isAdmin;
         }
-        if (path.matches("^/api/v1.0/flight/airline/\\d+$")) {
+        if (path.matches("^/api/flight/airline/\\d+$")) {
             return isAdmin;
         }
-        if (path.equals("/api/v1.0/flight/airline/inventory/add")) {
+        if (path.equals("/api/flight/airline/inventory/add")) {
             return isAdmin;
         }
-        if (path.matches("^/api/v1.0/flight/\\d+/.+")
+        if (path.matches("^/api/flight/\\d+/.+")
                 && method == HttpMethod.PUT) {
             return isAdmin;
         }
@@ -114,19 +114,19 @@ public class JwtAuthFilter implements GlobalFilter, Ordered {
         // - GET /api/v1.0/flight/ticket/{pnr}
         // - GET /api/v1.0/flight/booking/history/{emailId}
         // - DELETE /api/v1.0/flight/booking/cancel/{pnr}
-        if (path.matches("^/api/v1.0/flight/booking/\\d+$")
+        if (path.matches("^/api/flight/booking/\\d+$")
                 && method == HttpMethod.POST) {
             return isUser || isAdmin;
         }
-        if (path.matches("^/api/v1.0/flight/ticket/.+")
+        if (path.matches("^/api/flight/ticket/.+")
                 && method == HttpMethod.GET) {
             return isUser || isAdmin;
         }
-        if (path.matches("^/api/v1.0/flight/booking/history/.+")
+        if (path.matches("^/api/flight/booking/history/.+")
                 && method == HttpMethod.GET) {
             return isUser || isAdmin;
         }
-        if (path.matches("^/api/v1.0/flight/booking/cancel/.+")
+        if (path.matches("^/api/flight/booking/cancel/.+")
                 && method == HttpMethod.DELETE) {
             return isUser || isAdmin;
         }
